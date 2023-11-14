@@ -1,0 +1,357 @@
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 13, 42) 100%);
+    height: 100%;
+}
+body {
+    color: white;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h1 {
+    color: white;
+    text-shadow: 0.1rem 0.1rem  blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.errorlabel {
+    color: white;
+    text-shadow: 0.1rem 0.1rem red;
+}
+
+.groep {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginGoogle {
+    display: flex;
+    width: 12rem;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+}
+    #loginGoogle img {
+      background: white;
+      padding: 0 0;
+      border-radius: 1rem;
+      margin-left: 0.1rem;
+    }
+    #loginGoogle button {
+      margin-top: 0;
+      
+      font-weight: bold;
+      color: black;
+    }
+
+
+
+input{
+    background: transparent;
+    border: solid 0.1rem #800080;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+}
+button {
+    font-size: 1.2rem;
+    color: purple;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.primair {
+    border: solid 0.1rem purple;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+}
+
+.secundair {
+    border: none;
+    background: none
+}
+
+.backArrow svg {
+    fill: white;
+}
+
+#login, #registerForm {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#main {
+    background: none;
+    color: grey;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.header h1 {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-prim {
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: lightgrey;
+    border: 0.1rem solid black;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+.button-sec {
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: lightgrey;
+    border: 0.1rem solid white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.channelInfo {
+    background: rgba(255, 255, 255, 0);
+    border: solid 0.1rem rgb(255, 255, 255);
+    /* box-shadow: 0.1rem 0.1rem  rgb(255, 255, 255); */
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #chatDiv p {
+    margin: 0;
+    padding: 0;
+} */
+#chatDiv div:hover {
+    position: relative;
+    left: 0.25%;
+    box-shadow: none;
+}
+#chatDiv div h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#addChat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+#deleteChat {
+    position: fixed;
+    left: 25%;
+    bottom: 0;
+    display: flex;
+    align-items: baseline;
+}
+#chatTitelandAdd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat {
+    background: transparent;
+    border: 0.1rem solid blueviolet;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+#titel-chat {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
+}
+li {
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+.chat li {
+    padding: 0.5rem 1rem;
+}
+.sent {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+#messages {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+#messagesDiv {
+    overflow-x: none;
+    overflow-y: scroll;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.chat li.sent{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    
+}
+.chat span{
+    display: flex;
+    color: grey;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+.chat li.receive{
+    background-color: grey;
+    color: white;
+    border-radius: 0.5rem;
+    margin-right: auto;
+}
+
+#message-form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-right: -2%;
+    background: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#message-btn {
+    background: none;
+}
+#message-btn svg g {
+    fill: white;
+}
+#message-input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background: white;
+    color: blueviolet;
+}
+
+#header-chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: 0.1rem solid blueviolet;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.backChat svg{
+    fill: white;
+    margin-left: 1.5rem;
+}
+#settings-chat svg path {
+    fill: white;
+}
+#settings-chat {
+    margin-right: 1.5rem;
+}
+#btnChannel, #btnChannelDel {
+    background: blueviolet;
+    border-radius: 0% 1rem 1rem 0%;
+    border: 0.1rem solid transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+#inputChannel, #inputChannelDel {
+    background: none;
+    border: none;
+    margin: 0;
+    font-size: 0.8rem;
+    color: blueviolet;
+}
+#channel-form, #channel-formDel {
+    background: transparent;
+    border-radius: 1.5rem 3rem 3rem 1.5rem;
+    border: solid 0.1rem blueviolet;
+}
+#verlaatChat {
+    background: grey;
+    display: none;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#btnVerlaatChat {
+    background-color: rgba(255, 0, 0, 0.272);
+    color: white;
+    border: solid 0.1rem red;
+}
+#search-input {
+    background-image: url('../img/search.png');
+    width: 100%;
+    border: solid 0.1rem blueviolet;
+    opacity: 50%;
+    font-size: 1rem;
+}
+.btnDeleteChannel {
+    height: 20%;
+    
+}
+
+.contentChannel {
+    display: flex;
+    flex-direction: column;
+}
+
+#backMain {
+    margin-left: 1rem;
+}
+
+#users-ingelogd p {
+    color: white;
+}
+#users-ingelogd p span {
+    color: green;
+}
+
+

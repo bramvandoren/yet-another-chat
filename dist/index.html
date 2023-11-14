@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.a4d07b9f.css">
+  <title>Yet Another Chat</title>
+</head>
+<body>
+  <div id="login">
+    <div class="header">
+      <h1 id="tITEL">Yet Another Chat</h1>
+    </div>
+    <form>
+      <div class="groep">
+        <label for="txtEmail">Email:</label>
+        <input id="txtEmail" type="email">
+        <div id="errorEmail" class="errorlabel">Error message</div>
+      </div>
+      <div class="groep">
+        <label for="txtPassword">Password:</label>
+        <input id="txtPassword" type="password">
+        <div id="errorPassword" class="errorlabel">Error message</div>
+      </div>
+      <div id="divLoginError" class="groep">
+        <div id="errorMessage" class="errorlabel">Error message</div>
+      </div>
+      <button id="btnLogin" type="button" class="button-sec">Log in</button>
+      <div id="loginGoogle">
+        <img src="/google.4257e34f.svg" alt="google">
+        <button id="btnGoogle" type="button" class="button-sec">Log in met Google</button>
+      </div>
+    </form>
+    <p>Nog geen account?</p>
+      <button id="btnSignupForm" type="button" class="button secundair">Registreer hier</button>
+  </div>
+  <div id="registerForm">
+    <div class="backArrow" id="backLogin">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18.634" height="30.704" viewbox="0 0 18.634 30.704">
+        <path id="Icon_awesome-chevron-left" data-name="Icon awesome-chevron-left" d="M2.427,16.807,16.092,3.142a1.688,1.688,0,0,1,2.386,0l1.594,1.594a1.688,1.688,0,0,1,0,2.384L9.245,18l10.83,10.881a1.687,1.687,0,0,1,0,2.384l-1.594,1.594a1.688,1.688,0,0,1-2.386,0L2.427,19.193A1.688,1.688,0,0,1,2.427,16.807Z" transform="translate(-1.933 -2.648)"></path>
+      </svg>
+    </div>
+    <div class="header">
+      <h1>Registreer.</h1>
+    </div>
+    <form class="add">
+      <div class="groep">
+        <label for="txtEmailRegister">Email:</label>
+        <input id="txtEmailRegister" type="email">
+        <div id="errorEmailRegister" class="errorlabel">Error message</div>
+      </div>
+      <div class="groep">
+        <label for="txtPasswordRegister">Password:</label>
+        <input id="txtPasswordRegister" type="password">
+        <div id="errorPasswordRegister" class="errorlabel">Error message</div>
+      </div>
+      <div id="divRegisterError" class="groep">
+        <div id="errorMessage" class="errorlabel">Error message</div>
+      </div>
+      <button id="btnSignup" type="button" class="button primair">Registreer</button>
+    </form>
+  </div>
+  <div id="app">
+    <div class="header">
+      <img id="logoChat" src="/conversation.4d8f1435.png" alt="LOGO" width="40px">
+      <h1 id="titel">MyChats</h1>
+      <button id="btnprofiel" class="button-prim">
+        PROFIEL
+      </button>
+    </div>
+    <div id="main">
+      <form id="searchbar">
+        <input type="text" id="search-input" placeholder="Zoeken">
+      </form>
+      <div id="users-ingelogd">
+      </div>
+      <div id="chats">
+        <div id="chatTitelandAdd">
+          <h1>CHATS</h1>
+          <div id="addChat">
+          <form id="channel-form">
+              <input id="inputChannel" type="text" placeholder="Voeg Chat toe">
+              <button id="btnChannel" type="submit">+</button>
+          </form>
+          </div>
+        </div>
+        <div id="bigchatDiv">
+          <div id="chatDiv"></div>
+          <div id="formDiv"></div>
+        </div>
+      <div id="formDiv"></div>
+    </div>
+    <div id="deleteChat">
+      <form id="channel-formDel">
+          <input id="inputChannelDel" type="text" placeholder="Delete Chat">
+          <button id="btnChannelDel" type="submit">-</button>
+      </form>
+    </div>
+      <div class="chat">
+        <div id="header-chat">
+          <div class="backArrow backChat backMain">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18.634" height="30.704" viewbox="0 0 18.634 30.704">
+              <path id="Icon_awesome-chevron-left" data-name="Icon awesome-chevron-left" d="M2.427,16.807,16.092,3.142a1.688,1.688,0,0,1,2.386,0l1.594,1.594a1.688,1.688,0,0,1,0,2.384L9.245,18l10.83,10.881a1.687,1.687,0,0,1,0,2.384l-1.594,1.594a1.688,1.688,0,0,1-2.386,0L2.427,19.193A1.688,1.688,0,0,1,2.427,16.807Z" transform="translate(-1.933 -2.648)"></path>
+            </svg>
+          </div>
+          <h2 id="titel-chat"></h2>
+          <div class="settings-bullets" id="settings-chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewbox="0 0 24 24" fill="none">
+              <path class="pathSetting" d="M10 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm0-6a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm0 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" fill="#0D0D0D"></path>
+            </svg>
+          </div>
+        </div>
+        <div id="verlaatChat">
+          <button id="btnVerlaatChat">Verlaat Chat</button>
+        </div>
+        <div id="messagesDiv">
+          <ul id="messages">
+
+          </ul>
+          <form id="message-form">
+            <input id="message-input" type="text" placeholder="Typ een bericht">
+            <button id="message-btn" type="submit" onclick="scroll(0, 100)">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewbox="0 0 28 28" version="1.1">
+                <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="ic_fluent_send_28_filled" fill="#212121" fill-rule="nonzero">
+                        <path d="M3.78963301,2.77233335 L24.8609339,12.8499121 C25.4837277,13.1477699 25.7471402,13.8941055 25.4492823,14.5168992 C25.326107,14.7744476 25.1184823,14.9820723 24.8609339,15.1052476 L3.78963301,25.1828263 C3.16683929,25.4806842 2.42050372,25.2172716 2.12264586,24.5944779 C1.99321184,24.3238431 1.96542524,24.015685 2.04435886,23.7262618 L4.15190935,15.9983421 C4.204709,15.8047375 4.36814355,15.6614577 4.56699265,15.634447 L14.7775879,14.2474874 C14.8655834,14.2349166 14.938494,14.177091 14.9721837,14.0981464 L14.9897199,14.0353553 C15.0064567,13.9181981 14.9390703,13.8084248 14.8334007,13.7671556 L14.7775879,13.7525126 L4.57894108,12.3655968 C4.38011873,12.3385589 4.21671819,12.1952832 4.16392965,12.0016992 L2.04435886,4.22889788 C1.8627142,3.56286745 2.25538645,2.87569101 2.92141688,2.69404635 C3.21084015,2.61511273 3.51899823,2.64289932 3.78963301,2.77233335 Z" id="🎨-Color"></path>
+                    </g>
+                </g>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div id="profiel">
+        <!-- <div class="backArrow backMain">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18.634" height="30.704" viewBox="0 0 18.634 30.704">
+            <path id="Icon_awesome-chevron-left" data-name="Icon awesome-chevron-left" d="M2.427,16.807,16.092,3.142a1.688,1.688,0,0,1,2.386,0l1.594,1.594a1.688,1.688,0,0,1,0,2.384L9.245,18l10.83,10.881a1.687,1.687,0,0,1,0,2.384l-1.594,1.594a1.688,1.688,0,0,1-2.386,0L2.427,19.193A1.688,1.688,0,0,1,2.427,16.807Z" transform="translate(-1.933 -2.648)"/>
+          </svg>
+        </div> -->
+        <form>
+          <div class="groep">
+            <div id="authState" class="authlabel"></div>
+          </div>
+          <button id="btnLogout" type="button" class="button buttonBlue button-sec">Log out</button>
+        </form>
+      </div>
+    </div>
+  <script src="/index.be591adc.js" defer=""></script>
+</div></body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "opdracht02-yet-another-chat-bramvdoren",
+  "version": "1.0.0",
+  "description": "MyChat",
+  "scripts": {
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdmgent-mobdev1/opdracht02-yet-another-chat-bramvdoren.git"
+  },
+  "author": "bramvdoren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdmgent-mobdev1/opdracht02-yet-another-chat-bramvdoren/issues"
+  },
+  "homepage": "https://github.com/gdmgent-mobdev1/opdracht02-yet-another-chat-bramvdoren#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "parcel": "^2.7.0",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "firebase": "^9.13.0"
+  }
+}
